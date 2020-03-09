@@ -1,0 +1,21 @@
+{
+  "name": "VoltageTheme",
+  "version": "1.0.0",
+  "main": "index.php",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.3",
+    "susy": "2.2.1",
+    "normalize-scss": "3.0.3",
+    "fancybox": "2.1.5",
+    "animate.css": "animate-css#^3.5.2",
+    "wow": "wowjs#^1.1.2"
+  },
+  "private": true,
+  "devDependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}

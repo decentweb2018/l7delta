@@ -1,0 +1,1718 @@
+{
+    "key": "group_577d0675208ac",
+    "title": "Theme Settings",
+    "fields": [
+        {
+            "key": "field_577d068288d0e",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_58a63c445ea47",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_58a63cd5449fd",
+            "label": "Logo Alt",
+            "name": "logo_alt",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_58a63c825ea49",
+            "label": "Logo Height",
+            "name": "logo_height",
+            "type": "number",
+            "instructions": "Max-height = 65px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ae047ae9358a",
+            "label": "Logo Margin Top",
+            "name": "logo_margin_top",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ae047c89358b",
+            "label": "Logo Margin Bottom",
+            "name": "logo_margin_bottom",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ab8e84946d2f",
+            "label": "Text Logo Color",
+            "name": "home_button_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_588af6ae5a554",
+            "label": "Display Notification?",
+            "name": "should_display_notification",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_588af69d5a553",
+            "label": "Notification",
+            "name": "notification",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_588af6ae5a554",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 1,
+            "max": 1,
+            "layout": "block",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "field_group_key": "group_58807e29731db",
+            "repeatable": false,
+            "appearances": [],
+            "sub_fields": []
+        },
+        {
+            "key": "field_5783e4b9e6a8a",
+            "label": "Blog",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_589a4c2480480",
+            "label": "Header Colors",
+            "name": "global_header_colors",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5899feb002ea6"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_589a1d43f5341",
+                    "label": "Custom Header Color?",
+                    "name": "custom_header_color",
+                    "prefix": "acf",
+                    "type": "true_false",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5899feb002ea6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "custom_header_color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "_clone": "field_589a4c2480480",
+                    "__key": "field_589a1d43f5341",
+                    "__name": "custom_header_color",
+                    "__label": "Custom Header Color?"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899feccf533b",
+                    "label": "BG Color",
+                    "name": "header_bg_color",
+                    "prefix": "acf",
+                    "type": "color_picker",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589a1d43f5341",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899feb002ea6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "header_bg_color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "_clone": "field_589a4c2480480",
+                    "__key": "field_5899feccf533b",
+                    "__name": "header_bg_color",
+                    "__label": "BG Color"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899ff64f533c",
+                    "label": "Logo Color",
+                    "name": "header_logo_color",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589a1d43f5341",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899feb002ea6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "header_logo_color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "choices": {
+                        "light": "Light",
+                        "dark": "Dark"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "_clone": "field_589a4c2480480",
+                    "__key": "field_5899ff64f533c",
+                    "__name": "header_logo_color",
+                    "__label": "Logo Color"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5a6747528d56f",
+                    "label": "Home Button Color",
+                    "name": "header_home_button_color",
+                    "prefix": "acf",
+                    "type": "color_picker",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589a1d43f5341",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899feb002ea6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "header_home_button_color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "_clone": "field_589a4c2480480",
+                    "__key": "field_5a6747528d56f",
+                    "__name": "header_home_button_color",
+                    "__label": "Home Button Color"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_589a0227f533d",
+                    "label": "Button Color",
+                    "name": "header_button_color",
+                    "prefix": "acf",
+                    "type": "color_picker",
+                    "value": null,
+                    "menu_order": 4,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589a1d43f5341",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899feb002ea6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "header_button_color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "_clone": "field_589a4c2480480",
+                    "__key": "field_589a0227f533d",
+                    "__name": "header_button_color",
+                    "__label": "Button Color"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_589a1c7bf533e",
+                    "label": "Menu Trigger Color",
+                    "name": "header_menu_trigger_color",
+                    "prefix": "acf",
+                    "type": "color_picker",
+                    "value": null,
+                    "menu_order": 5,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589a1d43f5341",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899feb002ea6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "header_menu_trigger_color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "_clone": "field_589a4c2480480",
+                    "__key": "field_589a1c7bf533e",
+                    "__name": "header_menu_trigger_color",
+                    "__label": "Menu Trigger Color"
+                }
+            ],
+            "repeatable": true
+        },
+        {
+            "key": "field_579906703f9f9",
+            "label": "Excerpt Truncate",
+            "name": "excerpt_truncate_by",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "char": "Character",
+                "word": "Word"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "char",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value",
+            "repeatable": true
+        },
+        {
+            "key": "field_579906fb3f9fb",
+            "label": "Truncate Amount",
+            "name": "truncate_amount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 215,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_5c47c55e7dad7",
+            "label": "Featured Posts",
+            "name": "featured_posts",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5c47c5757dad8",
+                    "label": "The Post",
+                    "name": "the_post",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5c4be16e04178",
+            "label": "Blog Layout",
+            "name": "blog_layout",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "list": "List",
+                "cards": "Cards",
+                "cardsfull": "Cards with no Featured Section"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_579906653f9f8",
+            "label": "404",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_579f60604a32d",
+            "label": "404 Page",
+            "name": "404_page",
+            "type": "page_link",
+            "instructions": "This will configure your 404 Page to be a specific page that can be configured however you want.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "allow_archives": 1,
+            "repeatable": true
+        },
+        {
+            "key": "field_5783e4efe6a8b",
+            "label": "404 Message",
+            "name": "404_message",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_5783e57ed88b3",
+            "label": "404 Articles",
+            "name": "404_articles",
+            "type": "post_object",
+            "instructions": "Articles displayed on the 404 page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1,
+            "repeatable": true
+        },
+        {
+            "key": "field_577d06d588d10",
+            "label": "Testimonials",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_577d092f932c4",
+            "label": "Animation",
+            "name": "testimonials_animation",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fade": "Fade",
+                "slide": "Slide"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value",
+            "repeatable": true
+        },
+        {
+            "key": "field_579f70b64d534",
+            "label": "Autoplay Speed",
+            "name": "testimonials_autoplaySpeed",
+            "type": "number",
+            "instructions": "In milliseconds",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3000,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_579f71024d535",
+            "label": "Animation Speed",
+            "name": "testimonials_speed",
+            "type": "number",
+            "instructions": "In milliseconds",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3000,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_577d088a09121",
+            "label": "Testimonials",
+            "name": "testimonials",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Row",
+            "repeatable": true,
+            "sub_fields": [
+                {
+                    "key": "field_577d08a509122",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "repeatable": true
+                }
+            ]
+        },
+        {
+            "key": "field_577d087b09120",
+            "label": "Footer CTA",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_5aa2b097944f6",
+            "label": "Footer CTA Toggle",
+            "name": "footer_cta_toggle",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5b210895e0c6e",
+            "label": "CTA Button Color",
+            "name": "cta_button_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5b2108a9e0c6f",
+            "label": "CTA Button Hover Color",
+            "name": "cta_button_hover_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ae221a5475de",
+            "label": "BG Color",
+            "name": "footer_cta_bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_58809049507f0",
+            "label": "BG Image",
+            "name": "footer_cta_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ae2276a475e1",
+            "label": "BG Overlay",
+            "name": "cta_bg_overlay",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ae223fc475df",
+            "label": "BG Overlay Color",
+            "name": "cta_background_overlay",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ae2276a475e1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ae226a9475e0",
+            "label": "BG Overlay Opacity",
+            "name": "bg_overlay_opacity",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ae2276a475e1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "",
+            "append": "%",
+            "repeatable": true
+        },
+        {
+            "key": "field_58808fe2507ee",
+            "label": "Copy",
+            "name": "footer_cta_copy",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_58809086507f2",
+            "label": "Link",
+            "name": "footer_cta_link",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 1,
+            "max": 1,
+            "layout": "block",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "field_group_key": "group_576c7d068ac8e",
+            "repeatable": false,
+            "appearances": [],
+            "sub_fields": []
+        },
+        {
+            "key": "field_58809034507ef",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac5f44786023",
+            "label": "Background Color",
+            "name": "delta_footer_background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "3c444e",
+            "repeatable": true
+        },
+        {
+            "key": "field_5adf2843f464d",
+            "label": "Background Image Toggle",
+            "name": "footer_background_toggle",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5adf2864f464e",
+            "label": "Footer Background image",
+            "name": "footer_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5adf2843f464d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac5f4cd0b946",
+            "label": "Text color",
+            "name": "delta_footer_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5aca4d97f9a3b",
+            "label": "Link Hover Color",
+            "name": "delta_footer_link_hover_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5aa3d07edb459",
+            "label": "Footer Logo",
+            "name": "footer_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5aa3d0aadb45a",
+            "label": "Footer Logo Width",
+            "name": "footer_logo_width",
+            "type": "number",
+            "instructions": "width of the logo in px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 200,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_577d070d88d12",
+            "label": "Copyright Name",
+            "name": "copyright_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "© 2016",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_577d06e988d11",
+            "label": "Phone Number",
+            "name": "phone_number",
+            "type": "text",
+            "instructions": "If this field is empty, then email will be used in the footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5b165eca105cc",
+            "label": "Email",
+            "name": "footer_email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_58808a123127f",
+            "label": "Disclaimer",
+            "name": "disclaimer",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_588aee117e527",
+            "label": "Contact Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_588aee1d7e528",
+            "label": "Phone",
+            "name": "contact_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_588aee3e7e529",
+            "label": "Email",
+            "name": "contact_email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac6168a9f381",
+            "label": "Header Buttons",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac616a29f382",
+            "label": "Primary Button Text",
+            "name": "delta_primary_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Explore",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac616b89f383",
+            "label": "Primary Button Link",
+            "name": "delta_primary_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac616dd9f384",
+            "label": "Primary Button Active Color",
+            "name": "delta_primary_button_active_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac617099f385",
+            "label": "Primary Button Hover Color",
+            "name": "delta_primary_button_hover_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac628f1f125a",
+            "label": "Primary Button Text Color",
+            "name": "delta_primary_button_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac62920f125b",
+            "label": "Primary Button Text Hover Color",
+            "name": "delta_primary_button_text__hover_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "repeatable": true
+        },
+        {
+            "key": "field_5c860cc142ddb",
+            "label": "Primary Button - open new window",
+            "name": "delta_primary_button_open_new_window",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ac61f0bd081b",
+            "label": "Secondary Button Toggle",
+            "name": "delta_secondary_button_toggle",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac61a8fa4ab4",
+            "label": "Secondary Button Text",
+            "name": "delta_secondary_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ac61f0bd081b",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac61ab1a4ab5",
+            "label": "Secondary Button Link",
+            "name": "delta_secondary_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ac61f0bd081b",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac61b52a4ab6",
+            "label": "Secondary Button Active Color",
+            "name": "delta_secondary_button_active_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ac61f0bd081b",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac61b77a4ab7",
+            "label": "Secondary Button Hover Color",
+            "name": "delta_secondary_button_hover_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ac61f0bd081b",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac62b0b62597",
+            "label": "Secondary Button Text Color",
+            "name": "delta_secondary_button_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "repeatable": true
+        },
+        {
+            "key": "field_5ac62b3c62598",
+            "label": "Secondary Button Text Hover Color",
+            "name": "delta_secondary_button_text__hover_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "repeatable": true
+        },
+        {
+            "key": "field_5c860d9242ddc",
+            "label": "Secondary Button - open new window",
+            "name": "delta_secondary_button_open_new_window",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5b5fdd706be1d",
+            "label": "Tracking",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "repeatable": true
+        },
+        {
+            "key": "field_5b5fdd7f6be1e",
+            "label": "Javascript Tracking Codes",
+            "name": "tracking_codes",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "repeatable": true
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "is_acf_component": 0,
+    "acf_component_defaults": {
+        "repeatable": "0",
+        "min": "",
+        "max": "",
+        "layout": "block",
+        "button_label": "",
+        "appearances": ""
+    },
+    "modified": 1552289217
+}

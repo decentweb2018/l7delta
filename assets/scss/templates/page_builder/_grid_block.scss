@@ -1,0 +1,323 @@
+section.grid_block{
+  width: 100%;
+  padding-bottom: 1px;
+  color: #6f7374;
+  background-size: cover;
+  background-color: #fff;
+
+  @include breakpoint($break-large) {
+    font-size: 2rem;
+  }
+
+  @include breakpoint($break-large-plus) {
+    font-size: 2.4rem;
+  }
+
+  &.full_width{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .intro_content{
+      @include section-padding;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &:not(.full_width){
+    @include section-padding;
+  }
+
+  .intro_content{
+    margin-bottom: 2rem;
+  }
+
+  > .max-width-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+
+    .grid_item {
+      padding: 10%;
+      background-size: cover;
+
+      @include breakpoint($break-medium) {
+        padding: 5%;
+      }
+      @include breakpoint($break-large) {
+        padding: 2%;
+      }
+    }
+
+    &.reading-well{
+      padding: 0;
+
+      .grid_item {
+        padding: 5%;
+        background-size: cover;
+      }
+    }
+  }
+
+  > .grid_item{
+    @include section-padding;
+    @extend .max-width-container;
+  }
+
+  .grid_item{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 1.6rem;
+    vertical-align: top;
+    @include border-collapsible( #efefef );
+
+    display: flex;
+    flex: 1 0 100%;
+
+    flex-direction: column;
+
+    @include breakpoint($break-medium, max) {
+      min-height: 60vw;
+      display: block;
+    }
+
+
+    .empty-grid-spacer{
+      padding: 20%;
+
+      @include breakpoint($break-small) {
+        padding: 0;
+      }
+    }
+
+    h1,h2,h3,h4,h5,h6{
+      color: #2a2b2f;
+    }
+
+    .section_heading{
+      text-align: left;
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: #313540;
+      font-family: $font-secondary;
+      font-weight: normal;
+      padding-bottom: 1.5rem;
+    }
+
+    .section_subheading{
+      text-align: left;
+      font-family: $font-default;
+      font-size: 12px;
+      font-size: 1.2rem;
+      color: #2a2b2f;
+      font-weight: lighter;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    //.grid-content-builder{
+    //  padding-top: 40px;
+    //  padding-top: 4.0rem;
+    //}
+
+    p{
+      font-size: 1em;
+    }
+
+    img{
+      min-height: 0;
+      width: 100%;
+    }
+
+    > img{
+      max-width: 200px;
+      margin: 0 auto;
+    }
+
+    .acf-map{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .acf-map-iframe{
+      &, & iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .cta{
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      @include breakpoint( $break-medium, max ) {
+        float: left;
+        clear: both;
+        font-size: .9em;
+      }
+
+      @include breakpoint( $break-small, max ) {
+        width: 100%;
+        padding: 2rem 3rem;
+      }
+    }
+  }
+
+  &.full_width{
+    .grid_item{
+      border-left: 0;
+      border-top: 0;
+    }
+  }
+
+  &.col_count_2{
+    @include breakpoint($break-medium) {
+      .grid_item {
+        width: 50%;
+        max-width: 50%;
+        flex-basis: 50%;
+        //padding: 5vw 10vw;
+
+        &.span-2{
+          width: 100%;
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+  &.col_count_3{
+    @include breakpoint($break-medium) {
+      .grid_item {
+        width: 50%;
+        max-width: 50%;
+        flex-basis: 50%;
+        //padding: 5vw 10vw;
+      }
+    }
+    @include breakpoint($break-large) {
+      .grid_item {
+        width: 33.3333%;
+        max-width: 33.3333%;
+        flex-basis: 33.3333%;
+
+        &.span-2{
+          width: 66.6666%;
+          max-width: 66.6666%;
+          flex-basis: 66.6666%;
+        }
+      }
+    }
+  }
+  &.col_count_4{
+    @include breakpoint($break-medium) {
+      .grid_item {
+        width: 50%;
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+    }
+
+    @include breakpoint($break-large) {
+      .grid_item {
+        width: 25%;
+        max-width: 25%;
+        flex-basis: 25%;
+
+        &.span-2{
+          width: 50%;
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+
+        &.span-3{
+          width: 75%;
+          max-width: 75%;
+          flex-basis: 75%;
+        }
+      }
+    }
+  }
+  &.col_count_5{
+    @include breakpoint($break-medium) {
+      .grid_item {
+        width: 50%;
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+    }
+    @include breakpoint($break-large) {
+      .grid_item {
+        width: 20%;
+        max-width: 20%;
+        flex-basis: 20%;
+
+        &.span-2{
+          width: 40%;
+          max-width: 40%;
+          flex-basis: 40%;
+        }
+
+        &.span-3{
+          width: 60%;
+          max-width: 60%;
+          flex-basis: 60%;
+        }
+
+        &.span-4{
+          width: 80%;
+          max-width: 80%;
+          flex-basis: 80%;
+        }
+      }
+    }
+  }
+  &.col_count_6{
+    @include breakpoint($break-medium) {
+      .grid_item {
+        width: 50%;
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+    }
+    @include breakpoint($break-large) {
+      .grid_item {
+        width: 16.6666%;
+        max-width: 16.6666%;
+        flex-basis: 16.6666%;
+
+        &.span-2{
+          width: 33.3333%;
+          max-width: 33.3333%;
+          flex-basis: 33.3333%;
+        }
+
+        &.span-3{
+          width: 50%;
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+
+        &.span-4{
+          width: 66.6666%;
+          max-width: 66.6666%;
+          flex-basis: 66.6666%;
+        }
+
+        &.span-5{
+          width: 83.33333%;
+          max-width: 83.33333%;
+          flex-basis: 83.33333%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+section.hero_block {
+  padding: 0 !important;
+  background-color: #000;
+
+  .hero-slide{
+    @include section-padding;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  &:first-of-type{
+    .hero-slide{
+      padding-top: 120px;
+
+      @include breakpoint($break-small) {
+        padding-top: 140px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  .content-container{
+    padding-top: 3rem;
+    position: relative;
+    z-index: 2;
+    @include breakpoint($break-medium) {
+      width: 90%;
+    }
+  }
+
+  h1{
+    color: #fff;
+    font-family: $font-secondary;
+    font-size: 6rem;
+    letter-spacing: -.5rem;
+    line-height: 1;
+    margin-left: -.06em;
+    padding-bottom: 3.9rem;
+
+    span{
+      color: $color-secondary;
+    }
+
+    @include breakpoint($break-medium) {
+      font-size: 9rem;
+    }
+
+    @include breakpoint($break-xl) {
+      font-size: 10rem;
+    }
+
+    @media (max-height: 900px)  {
+      font-size: 8rem;
+    }
+
+    @media (max-height: 800px)  {
+      font-size: 6.5rem;
+    }
+
+    @media (max-height: 700px)  {
+      font-size: 5.5rem;
+    }
+
+    .single-portfolio &{
+      margin-left: 0;
+      font-size: 2.5rem;
+      letter-spacing: normal;
+      display: block;
+    }
+  }
+
+  .content{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 800;
+    color: #EBEBEB;
+    letter-spacing: .01em;
+
+    @include breakpoint($break-medium) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint($break-large) {
+      max-width: 60%;
+      font-size: 2.2rem;
+    }
+
+    @include breakpoint($break-large-plus) {
+      font-size: 2.4rem;
+    }
+
+    @include breakpoint($break-xl) {
+      max-width: 1080px;
+      font-size: 2.6rem;
+    }
+
+    @media (max-height: 900px)  {
+      font-size: 1.7rem;
+    }
+
+    @media (max-height: 800px)  {
+      font-size: 1.6rem;
+    }
+
+    @media (max-height: 700px)  {
+      font-size: 1.5rem;
+    }
+
+    p{
+      font: inherit;
+      line-height: normal;
+      //font-size: 1.8rem;
+    }
+
+    a{
+      color: $color-secondary;
+      text-decoration: none;
+
+      &:hover{
+        color: $color-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+  .scroll-down{
+    position: absolute;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    color: $color-primary;
+    display: none;
+
+    @include breakpoint($break-medium) {
+      display: block;
+    }
+
+    .icon{
+      position: relative;
+      animation: scroll-down-animation 1.5s forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  &.full-height{
+    .hero-slide{
+      @include breakpoint($break-medium) {
+        min-height: calc(100vh);
+      }
+    }
+
+    .content-container{
+      max-width: 1580px;
+
+      @include breakpoint($break-medium) {
+        padding-top: 0;
+        position: absolute;
+        bottom: 11rem;
+      }
+    }
+  }
+}
+
+
+
+@keyframes scroll-down-animation {
+  0%   {top:0;}
+  100% {top:20px;}
+}

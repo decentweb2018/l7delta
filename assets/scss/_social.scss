@@ -1,0 +1,21 @@
+ul.share-buttons {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  z-index: 9999;
+}
+
+ul.share-buttons a{
+  transition: opacity .3s;
+  &:hover{
+    opacity: .7;
+  }
+}
+
+ul.share-buttons img {
+  width: 32px;
+}

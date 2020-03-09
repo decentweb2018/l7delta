@@ -1,0 +1,56 @@
+.acf-field-flexible-content[data-name='content'] > .acf-input > .acf-flexible-content > .values > .layout {
+  border-left: 10px solid #333; }
+  .acf-field-flexible-content[data-name='content'] > .acf-input > .acf-flexible-content > .values > .layout:nth-child(even) {
+    border-left: 10px solid #ccc; }
+  .acf-field-flexible-content[data-name='content'] > .acf-input > .acf-flexible-content > .values > .layout .acf-field[data-name="component"] > .acf-label {
+    display: none; }
+  .acf-field-flexible-content[data-name='content'] > .acf-input > .acf-flexible-content > .values > .layout > .acf-fields > .acf-field[data-name='component'] > .acf-input > .acf-repeater > .acf-table {
+    border: none; }
+
+.layout[data-layout='hero_block'] .acf-field[data-name='heading'] input,
+.layout[data-layout='hero_block'] .acf-field[data-name='heading_rotator'] input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  height: 52px;
+  font-size: 40px;
+  color: #222; }
+
+.layout[data-layout='hero_block'] .acf-field[data-name='heading_rotator'] input {
+  color: #39A6FB; }
+
+.layout[data-layout='hero_block'] .acf-field[data-name='heading_rotator'] thead {
+  display: none; }
+
+.acf-field[data-type='component_field'][data-name='background'] > .acf-input,
+.acf-field[data-type='component_field'][data-name='animate_options'] > .acf-input {
+  display: none; }
+
+.acf-field[data-type='component_field'][data-name='background'] > .acf-label,
+.acf-field[data-type='component_field'][data-name='animate_options'] > .acf-label {
+  margin-bottom: 0;
+  -webkit-transition: margin .4s;
+  transition: margin .4s; }
+  .acf-field[data-type='component_field'][data-name='background'] > .acf-label label:after,
+  .acf-field[data-type='component_field'][data-name='animate_options'] > .acf-label label:after {
+    float: right;
+    color: #bbb;
+    content: '\e80f';
+    font-family: "acf";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 23px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    margin-left: 10px;
+    vertical-align: middle; }
+
+.acf-field[data-type='component_field'][data-name='background'].expanded > .acf-label,
+.acf-field[data-type='component_field'][data-name='animate_options'].expanded > .acf-label {
+  margin-bottom: 10px; }
+  .acf-field[data-type='component_field'][data-name='background'].expanded > .acf-label label:after,
+  .acf-field[data-type='component_field'][data-name='animate_options'].expanded > .acf-label label:after {
+    line-height: 20px;
+    content: '\e810'; }

@@ -1,0 +1,135 @@
+//--------------------------------------------------------------
+// Typography
+//--------------------------------------------------------------
+
+body,
+button {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding-bottom: 25px;
+	padding-bottom: 2.5rem;
+
+	&:last-child{
+		padding-bottom: 0;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: $font-secondary;
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: 30px;
+	font-size: 3.0rem;
+
+	@include breakpoint($break-medium) {
+		font-size: 30px;
+		font-size: 3.0rem;
+	}
+
+	@include breakpoint($break-large) {
+		font-size: 50px;
+		font-size: 5.0rem;
+	}
+}
+
+h2 {
+	font-size: 20px;
+	font-size: 2.0rem;
+
+	@include breakpoint($break-medium) {
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
+
+	@include breakpoint($break-large) {
+		font-size: 36px;
+		font-size: 3.6rem;
+	}
+}
+
+h3 {
+	font-size: 18px;
+	font-size: 1.8rem;
+
+	@include breakpoint($break-medium) {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+
+	@include breakpoint($break-large) {
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+a{
+	transition: color .3s;
+	color: $color-primary;
+
+	&:hover{
+		color: darken($color-primary, 15%);
+	}
+}

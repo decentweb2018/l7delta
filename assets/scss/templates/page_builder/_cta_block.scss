@@ -1,0 +1,35 @@
+.cta_block{
+  transition: background .3s;
+  a{
+    @include section-padding-small;
+
+    color: $color-primary;
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: color .3s;
+
+    @include breakpoint($break-medium) {
+      font-size: 2.5em;
+    }
+
+    > span{
+      border-bottom: 2px solid transparent;
+      transition: border .3s;
+
+      span{
+        margin-left: 2rem;
+      }
+    }
+
+
+  }
+  &:hover{
+    background-color: $color-primary !important;
+    a{
+      color: #ffffff !important;
+    }
+  }
+}

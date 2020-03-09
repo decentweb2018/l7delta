@@ -1,0 +1,243 @@
+/* Styling for body elements in builder */
+
+//builder text block
+section.content_builder_block .single-content p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.content_builder_block.text_block .reading-well p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.content_builder_block.text_block ol, .content_builder_block.text_block ul {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-left: 0;
+}
+
+section.content_builder_block .single-content h1, .content_builder_block.text_block .reading-well h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #393a3e;
+  padding-bottom: 62px;
+}
+
+section.content_builder_block .single-content h2, .content_builder_block.text_block .reading-well h2 {
+  color: #555;
+}
+
+section.content_builder_block .single-content h3, .content_builder_block.text_block .reading-well h3 {
+  color: #555;
+}
+
+section.content_builder_block .single-content h4, .content_builder_block.text_block .reading-well h4 {
+  color: #555;
+}
+
+section.content_builder_block .single-content h5, .content_builder_block.text_block .reading-well h5 {
+  color: #555;
+}
+
+section.content_builder_block .single-content h6, .content_builder_block.text_block .reading-well h6 {
+  color: #555;
+}
+
+//builder grid
+
+section.content_builder_block.grid_block .intro_content p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.grid-content-builder ol, .grid-content-builder ul, section.grid_block .grid_item p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.content_builder_block.grid_block ol, .content_builder_block.grid_block ul {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-left: 0;
+}
+
+//blog single lists
+.blog-single ul, .blog-single ol {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-left: 0;
+}
+
+
+section.content_builder_block.grid_block h1, .content_builder_block.text_block.grid_block h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #393a3e;
+  padding-bottom: 62px;
+}
+
+section.content_builder_block.grid_block h2, .content_builder_block.grid_block h2 {
+  color: #555;
+}
+
+section.content_builder_block.grid_block h3, .content_builder_block.grid_block h3 {
+  color: #555;
+}
+
+section.content_builder_block.grid_block h4, .content_builder_block.grid_block h4 {
+  color: #555;
+}
+
+section.content_builder_block.grid_block h5, .content_builder_block.grid_block h5 {
+  color: #555;
+}
+
+section.content_builder_block.grid_block h6, .content_builder_block.grid_block h6 {
+  color: #555;
+}
+
+
+/* Misc Styling */
+
+section.hero_block h1 {
+	letter-spacing: -.1rem;
+}
+section.grid_block {
+	padding-bottom: 0;
+}
+.image_block .oembed-container {
+	padding-top: 0;
+}
+
+/* Form */
+
+// #field_1_3 {
+// 	padding-right: 0;
+// 	padding-left: 2vw;
+// }
+// #field_1_3 label {
+// 	left: 2vw;
+// }
+
+
+.gform_fields select {
+	background-color: transparent;
+	font-weight: 700;
+	border-radius: 0;
+	width: 100%;
+	height: 35px;
+	border: 0;
+	//border-bottom: 1px solid #393a3e;
+	outline: none;
+}
+.ginput_container_select select {
+	border: 0 none;
+}
+
+.gform_fields select + label {
+	opacity: 0;
+}
+.gform_fields select option {
+	color: #000;
+}
+.ginput_container_address .ginput_right.address_country {
+	padding-top: 9rem !important;
+}
+
+.ginput_container_address .ginput_right label,
+.ginput_container_name .name_last label,
+.size_half_right label {
+	z-index: -1;
+}
+.ginput_container_address .ginput_right,
+.ginput_container_name .name_last,
+.size_half_right {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
+}
+.ginput_container_address .ginput_right label {
+	position: absolute !important;
+	padding: 9rem 0 1rem !important;
+}
+
+@media (min-width: 480px) {
+	section.content_builder_block:first-of-type {
+	    padding-top: 0 !important;
+	}
+}
+@media (max-width: 480px) {
+	section.content_builder_block:first-of-type {
+	    padding-top: 0 !important;
+	}
+}
+
+
+@media (min-width: 720px) {
+	.ginput_container_address {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.ginput_container_address .ginput_left,
+	.ginput_container_address .ginput_right {
+		flex: 0 0 50%;
+		width: 100%;
+		max-width: 50%;
+	}
+	.ginput_container_address .ginput_left {
+		padding-right: 2vw;
+	}
+	.ginput_container_address .ginput_right,
+	.ginput_container_name .name_last,
+	.size_half_right {
+		//padding-left: 2vw;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		padding-right: 0 !important;
+	}
+	.ginput_container_address .ginput_right label,
+	.ginput_container_name .name_last label,
+	.size_half_right label {
+		position: absolute !important;
+		padding: 9rem 0 1rem !important;
+		//left: 2vw !important;
+		z-index: -1 !important;
+	}
+	.ginput_right.address_state {
+		border: 0 none !important;
+	}
+}
+
+/* form checkbox fix */
+.gfield_checkbox > li {
+	display: flex;
+	align-items: center;
+	margin: 0 0 5px;
+}
+.gfield_checkbox > li label {
+	margin-left: 10px;
+}
+
+.ginput_container {
+  margin-top: 13px;
+}
+
+.ginput_right.address_state {
+  border-bottom: 1px solid #393a3e !important;
+}
+
+#field_1_3 {
+  padding-right: 0;
+}
+
+.gform_heading {
+  display: none !important;
+}

@@ -1,0 +1,315 @@
+//--------------------------------------------------------------
+// Form Fields and Layout
+//--------------------------------------------------------------
+
+input[type="search"]{
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.js-grow textarea{
+  overflow: hidden;
+  resize: none;
+}
+
+.gform_wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 4rem;
+
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+    }
+  }
+  ul li.gfield, ul li.gfield span.name_first, ul li.gfield span.name_last, span.ginput_full, span.ginput_left, span.ginput_right{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    display: block;
+    @extend .clearfix;
+
+    label{
+      line-height: 1;
+      .gfield_required{
+        color: inherit;
+      }
+    }
+
+    &:not(.size_half):not(.name_first):not(.name_last){
+      clear: both;
+    }
+
+    &.size_half, &.name_first, &.name_last{
+      @include breakpoint($break-medium) {
+        clear: none;
+        width: 50%;
+        float: left;
+        padding-right: 2rem;
+        padding-right: 2vw;
+      }
+    }
+
+    &.force_gfield_padding,
+    &.address_state{
+      padding-top: 9rem;
+    }
+
+    label{
+      //pointer-events: none;
+      color: #A3AAB0;
+      font-weight: bold;
+      font-family: $font-secondary;
+      padding: 9rem 0 1rem;
+      padding-left: 0;
+      transition: .2s opacity;
+
+      &:not(.gfield_label_before_complex){
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &:not([for]){
+        position: static;
+        padding: 0;
+      }
+    }
+    .gfield_label_before_complex{
+      display: none;
+    }
+    &.name_first, &.name_last{
+      label{
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.override-label-position,
+    &.force_gfield_padding,
+    &.address_state{
+      label{
+        position: static;
+        padding: 0;
+      }
+    }
+
+    input[type=text], textarea, input.medium, textarea.medium{
+      background-color: transparent;
+
+      font-weight: bold;
+
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    input[type=text], textarea, input.medium, textarea.medium{
+      border-radius: 0;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #393a3e;
+      padding: 9rem 0 1rem;
+      outline: none;
+    }
+
+    .gfield_checkbox, .ginput_container_select, .address_state{
+      border-radius: 0;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #393a3e;
+      padding-bottom: 1rem;
+    }
+
+    &.active{
+      label{
+        opacity: 0;
+      }
+    }
+
+    &.gfield_error{
+      background-color: transparent;
+      margin-bottom: 0;
+      padding-right: 5rem;
+      padding-right: 5vw;
+      border-top: 0;
+      border-bottom: 0;
+
+      &.gfield_contains_required{
+        margin: 0;
+      }
+    }
+
+    .ginput_container_checkbox{
+      >.gfield_checkbox{
+        >li{
+          position: relative;
+
+          label{
+            position: static;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .address_state{
+      position: relative;
+
+      label{
+        display: block;
+        position: static;
+        padding: 0;
+      }
+    }
+  }
+
+  .gform_footer{
+    padding-top: 5rem;
+    clear: both;
+
+    .button{
+      border-width: 1px !important;
+
+      border-color: $color-secondary !important;
+      color: $color-secondary !important;
+
+      &:hover{
+        color: #fff !important;
+      }
+    }
+  }
+
+  input[type=submit].gform_button{
+    @extend .over-effect;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-width: 1px !important;
+
+    border-color: $color-secondary !important;
+    color: $color-secondary !important;
+
+    background: none;
+  }
+
+  div.validation_error{
+    color: #fff;
+    border: none;
+    background-color: $color-secondary;
+    width: 100%;
+    padding: 1rem;
+    font-size: inherit;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+.gforms_confirmation_message{
+  color: #fff;
+  border: none;
+  background-color: $color-primary;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.widget_search_contact_custom{
+  color: #878787;
+  .gform_wrapper{
+    margin: 0;
+    max-width: 100%;
+    border: 2px solid #bbb;
+    border-top: none;
+
+    .gform_heading{
+      margin: 0;
+      width: 100%;
+      cursor: pointer;
+
+      .gform_title{
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+        color: $color-secondary;
+      }
+    }
+    .validation_error{
+      font-size: 1.1rem;
+    }
+    .gform_body{
+      padding: 1rem;
+    }
+    .gform_footer{
+      margin: 0;
+      padding: 0;
+      border-top: 2px solid #bbb;
+
+      button, input[type=submit]{
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 0;
+        border-color: transparent !important;
+        border-width: 0 !important;
+        border-radius: 0;
+        color: $color-primary;
+        max-width: 100%;
+
+        &:hover{
+          border-color: $color-primary;
+          background-color: $color-primary;
+        }
+      }
+    }
+
+
+
+    ul li.gfield{
+      width:100%;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+
+      label{
+        padding: 1rem;
+        margin: 0;
+        color: #ccc;
+      }
+      input, textarea, input.medium, textarea.medium{
+        border-color: #ccc;
+        padding: 1rem;
+      }
+
+      &.gfield_error{
+        padding:0;
+        width:100%;
+
+        .validation_message{
+          color: #fff;
+          border: none;
+          background-color: $color-secondary;
+          width: 100%;
+          padding: 1rem;
+          font-size: 1.2rem;
+          font-weight: normal;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .gforms_confirmation_message{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.toggle-with-title{
+  .gform_body,
+  .gform_footer{
+    display: none;
+  }
+}

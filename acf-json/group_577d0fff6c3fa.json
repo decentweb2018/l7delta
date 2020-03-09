@@ -1,0 +1,802 @@
+{
+    "key": "group_577d0fff6c3fa",
+    "title": "Portfolio Archive Options",
+    "fields": [
+        {
+            "key": "field_577d1394ed32b",
+            "label": "Display Title",
+            "name": "display_title",
+            "type": "text",
+            "instructions": "(leave blank for post title)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57ac864d288ff",
+            "label": "Display Description",
+            "name": "display_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_577d124ae6334",
+            "label": "Image",
+            "name": "image",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "field_group_id": "group_5775386234428",
+            "min": 1,
+            "max": 1,
+            "layout": "block",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "ID": 37,
+                    "key": "field_577554d0edfa3",
+                    "label": "Full Width?",
+                    "name": "is_full_width",
+                    "prefix": "",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 36,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "is_full_width",
+                    "_input": "",
+                    "_valid": 1,
+                    "choices": {
+                        "true": "Yes",
+                        "false": "No"
+                    },
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "true",
+                    "layout": "horizontal",
+                    "allow_null": 0
+                },
+                {
+                    "ID": 38,
+                    "key": "field_57758bbc9f614",
+                    "label": "Animate Options",
+                    "name": "animate_options",
+                    "prefix": "",
+                    "type": "component_field",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 36,
+                    "wrapper": {
+                        "width": "",
+                        "class": "dropdown",
+                        "id": ""
+                    },
+                    "_name": "animate_options",
+                    "_input": "",
+                    "_valid": 1,
+                    "field_group_id": "group_5775227ccbb65",
+                    "min": 1,
+                    "max": 1,
+                    "layout": "row",
+                    "button_label": "Add Row",
+                    "collapsed": "",
+                    "sub_fields": [
+                        {
+                            "ID": 6,
+                            "key": "field_577522ab51b76",
+                            "label": "Animate Type",
+                            "name": "animate_type",
+                            "prefix": "",
+                            "type": "select",
+                            "value": null,
+                            "menu_order": 0,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": 5,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "animate_type",
+                            "_input": "",
+                            "_valid": 1,
+                            "choices": {
+                                "none": "None",
+                                "fadeIn": "Fade In",
+                                "fadeInDown": "Fade In Down",
+                                "fadeInDownBig": "Fade In Down Big",
+                                "fadeInLeft": "Fade In Left",
+                                "fadeInLeftBig": "Fade In Left Big",
+                                "fadeInRight": "Fade In Right",
+                                "fadeInRightBig": "Fade In Right Big",
+                                "fadeInUp": "Fade In Up",
+                                "fadeInUpBig": "Fade In Up Big",
+                                "bounceIn": "Bounce In",
+                                "bounceInDown": "Bounce In Down",
+                                "bounceInLeft": "Bounce In Left",
+                                "bounceInRight": "Bounce In Right",
+                                "bounceInUp": "Bounce In Up",
+                                "flipInX": "Flip In X",
+                                "flipInY": "Flip In Y",
+                                "lightSpeedIn": "Light Speed In",
+                                "rotateIn": "Rotate In",
+                                "rotateInDownLeft": "Rotate In Down Left",
+                                "rotateInDownRight": "Rotate In Down Right",
+                                "rotateInUpLeft": "Rotate In Up Left",
+                                "rotateInUpRight": "Rotate In Up Right",
+                                "rollIn": "Roll In",
+                                "zoomIn": "Zoom In",
+                                "zoomInDown": "Zoom In Down",
+                                "zoomInLeft": "Zoom In Left",
+                                "zoomInRight": "Zoom In Right",
+                                "zoomInUp": "Zoom In Up",
+                                "slideInDown": "Slide In Down",
+                                "slideInLeft": "Slide In Left",
+                                "slideInRight": "Slide In Right",
+                                "slideInUp": "Slide In Up"
+                            },
+                            "default_value": [
+                                "fadeIn"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "ID": 7,
+                            "key": "field_5775239951b77",
+                            "label": "Duration",
+                            "name": "animate_duration",
+                            "prefix": "",
+                            "type": "number",
+                            "value": null,
+                            "menu_order": 1,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": 5,
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "animate_duration",
+                            "_input": "",
+                            "_valid": 1,
+                            "default_value": 1,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "sec",
+                            "min": "",
+                            "max": "",
+                            "step": ".1",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "ID": 8,
+                            "key": "field_577523fa51b78",
+                            "label": "Delay",
+                            "name": "animate_delay",
+                            "prefix": "",
+                            "type": "number",
+                            "value": null,
+                            "menu_order": 2,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": 5,
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "animate_delay",
+                            "_input": "",
+                            "_valid": 1,
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "sec",
+                            "min": "",
+                            "max": "",
+                            "step": ".1",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "ID": 9,
+                            "key": "field_577524b751b79",
+                            "label": "Offset",
+                            "name": "animate_offset",
+                            "prefix": "",
+                            "type": "number",
+                            "value": null,
+                            "menu_order": 3,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": 5,
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "animate_offset",
+                            "_input": "",
+                            "_valid": 1,
+                            "default_value": 20,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ]
+                },
+                {
+                    "ID": 39,
+                    "key": "field_5775552cedfa4",
+                    "label": "Image",
+                    "name": "image",
+                    "prefix": "",
+                    "type": "component_field",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 36,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "image",
+                    "_input": "",
+                    "_valid": 1,
+                    "field_group_id": "group_5772d16d408df",
+                    "min": 1,
+                    "max": 1,
+                    "layout": "row",
+                    "button_label": "Add Row",
+                    "collapsed": "",
+                    "sub_fields": [
+                        {
+                            "ID": 11,
+                            "key": "field_5772d65d3de83",
+                            "label": "Background Color",
+                            "name": "bg_color",
+                            "prefix": "",
+                            "type": "color_picker",
+                            "value": null,
+                            "menu_order": 0,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_color",
+                            "_input": "",
+                            "_valid": 1,
+                            "default_value": ""
+                        },
+                        {
+                            "ID": 12,
+                            "key": "field_5772d6bc3de85",
+                            "label": "Type",
+                            "name": "bg_toggle",
+                            "prefix": "",
+                            "type": "radio",
+                            "value": null,
+                            "menu_order": 1,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_toggle",
+                            "_input": "",
+                            "_valid": 1,
+                            "choices": {
+                                "None": "None",
+                                "Image": "Image",
+                                "Video": "Video",
+                                "Parallax": "Parallax"
+                            },
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "allow_null": 0
+                        },
+                        {
+                            "ID": 13,
+                            "key": "field_577556f72c973",
+                            "label": "Responsive Options",
+                            "name": "responsive_options",
+                            "prefix": "",
+                            "type": "checkbox",
+                            "value": null,
+                            "menu_order": 2,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Image"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "responsive_options",
+                            "_input": "",
+                            "_valid": 1,
+                            "choices": {
+                                "single": "Single Image",
+                                "small": "Small",
+                                "medium": "Medium",
+                                "large": "Large"
+                            },
+                            "default_value": [
+                                "single"
+                            ],
+                            "layout": "horizontal",
+                            "toggle": 0
+                        },
+                        {
+                            "ID": 14,
+                            "key": "field_5772d6943de84",
+                            "label": "Image",
+                            "name": "bg_image",
+                            "prefix": "",
+                            "type": "image",
+                            "value": null,
+                            "menu_order": 3,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Image"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "single"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Parallax"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "single"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_image",
+                            "_input": "",
+                            "_valid": 1,
+                            "return_format": "array",
+                            "preview_size": "large",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "ID": 15,
+                            "key": "field_577557b12c975",
+                            "label": "Image - Small",
+                            "name": "bg_image_small",
+                            "prefix": "",
+                            "type": "image",
+                            "value": null,
+                            "menu_order": 4,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Image"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "small"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Parallax"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "small"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_image_small",
+                            "_input": "",
+                            "_valid": 1,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "ID": 16,
+                            "key": "field_577557c52c976",
+                            "label": "Image - Medium",
+                            "name": "bg_image_medium",
+                            "prefix": "",
+                            "type": "image",
+                            "value": null,
+                            "menu_order": 5,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Image"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "medium"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Parallax"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "medium"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_image_medium",
+                            "_input": "",
+                            "_valid": 1,
+                            "return_format": "array",
+                            "preview_size": "large",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "ID": 17,
+                            "key": "field_577557cd2c977",
+                            "label": "Image - Large",
+                            "name": "bg_image_large",
+                            "prefix": "",
+                            "type": "image",
+                            "value": null,
+                            "menu_order": 6,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Image"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "large"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Parallax"
+                                    },
+                                    {
+                                        "field": "field_577556f72c973",
+                                        "operator": "==",
+                                        "value": "large"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_image_large",
+                            "_input": "",
+                            "_valid": 1,
+                            "return_format": "array",
+                            "preview_size": "large",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "ID": 18,
+                            "key": "field_5772d6f53de86",
+                            "label": "Video",
+                            "name": "bg_video",
+                            "prefix": "",
+                            "type": "oembed",
+                            "value": null,
+                            "menu_order": 7,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "==",
+                                        "value": "Video"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "bg_video",
+                            "_input": "",
+                            "_valid": 1,
+                            "width": "",
+                            "height": ""
+                        },
+                        {
+                            "ID": 118,
+                            "key": "field_58803757baf63",
+                            "label": "Overlay Color",
+                            "name": "overlay_color",
+                            "prefix": "",
+                            "type": "color_picker",
+                            "value": null,
+                            "menu_order": 8,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "!=",
+                                        "value": "None"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "overlay_color",
+                            "_input": "",
+                            "_valid": 1,
+                            "default_value": ""
+                        },
+                        {
+                            "ID": 119,
+                            "key": "field_58803793baf64",
+                            "label": "Overlay Opacity",
+                            "name": "overlay_opacity",
+                            "prefix": "",
+                            "type": "number",
+                            "value": null,
+                            "menu_order": 9,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5772d6bc3de85",
+                                        "operator": "!=",
+                                        "value": "None"
+                                    }
+                                ]
+                            ],
+                            "parent": 10,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "overlay_opacity",
+                            "_input": "",
+                            "_valid": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": 100,
+                            "step": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "is_acf_component": 0,
+    "modified": 1486504233,
+    "local": "json"
+}

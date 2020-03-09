@@ -1,0 +1,89 @@
+{
+    "key": "group_5775386234428",
+    "title": "Full Width Media",
+    "fields": [
+        {
+            "key": "field_577554d0edfa3",
+            "label": "Full Width?",
+            "name": "is_full_width",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "true": "Yes",
+                "false": "No"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "true",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57758bbc9f614",
+            "label": "Animate Options",
+            "name": "animate_options",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "dropdown",
+                "id": ""
+            },
+            "field_group_id": "group_5775227ccbb65",
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "sub_fields": [],
+            "field_group_key": null,
+            "repeatable": false,
+            "appearances": []
+        },
+        {
+            "key": "field_5775552cedfa4",
+            "label": "Image",
+            "name": "image",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "field_group_id": "group_5772d16d408df",
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "sub_fields": [],
+            "field_group_key": null,
+            "repeatable": false,
+            "appearances": []
+        }
+    ],
+    "location": [],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "is_acf_component": true,
+    "modified": 1541750502
+}

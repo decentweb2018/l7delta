@@ -1,0 +1,89 @@
+/*
+Theme Name: L7 Delta
+Text Domain: _l7_theme
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+Theme styles found in assets/scss/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i&display=swap');
+
+.mobile-delta-header-buttons {
+	box-shadow: 0 -3px 3px 0 rgba(0,0,0,.4);
+}
+#header-delta-mobile-navigation {
+	overflow: auto;
+	padding-bottom: 200px;
+    margin-top: 70px !important;
+    padding-top: 30px !important;
+}
+.single-content {
+	padding-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.delta-hamburger-menu {
+		transition: none;
+	}
+	.delta-hamburger-menu-wrapper:hover .delta-hamburger-menu.animate {
+		background: hsla(0, 0%, 100%, 0);
+	}
+}
+
+.ginput_container_address .ginput_right.address_country,
+.ginput_container_address .ginput_right.address_state {
+	padding-top: 9rem !important;
+}
+
+.gform_fields select {
+	-webkit-appearance: menulist;
+	color: #a3aab0;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+}
+
+section.text_block .cta {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-width: 4px;
+    color: #359ff4;
+    border-color: #359ff4;
+    font-weight: 700;
+    padding: 2px 3.2rem;
+    font-size: 15px;
+}
+
+.acf-flexible-builder-notification .max-width-container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.acf-flexible-builder-notification .max-width-container span {
+	color: #fff;
+}
+.acf-flexible-builder-notification .max-width-container .cta {
+	margin-left: 40px;
+    color: #fff;
+    font-weight: 700;
+    padding: 7px 22px;
+    font-size: 14px;
+    border-color: #fff;
+}
+
+section.text_block {
+	padding: 0 !important;
+}
+section.text_block .single-content {
+	padding-bottom: 0 !important;
+}
+.gform_wrapper {
+	margin-top: 0 !important;
+}
+
+.logos_block .block-title {
+    padding: 0;
+}

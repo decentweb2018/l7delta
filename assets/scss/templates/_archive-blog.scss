@@ -1,0 +1,105 @@
+.blog-container{
+  max-width: 1800px;
+  @include section-padding-medium;
+  @include clearfix;
+
+  margin-top: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .content-area,
+  .widget-area{
+    @include border-collapsible( #efefef );
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1 1 1px;
+
+    flex-direction: column;
+
+    width: 0;
+  }
+
+  .content-area {
+    .page-title{
+      padding: 4% 5%;
+      color: $color-secondary;
+      font-size: 2.5rem;
+
+      @include breakpoint($break-medium) {
+        padding: 1rem 7rem;
+      }
+    }
+
+    article.post{
+      @include border-collapsible( #efefef );
+      padding: 8% 5%;
+
+      @include breakpoint($break-medium) {
+        padding: 60px 70px;
+      }
+
+      .reading-well{
+        position: relative;
+
+        .back-button{
+          font-size: 1.2rem;
+          font-family: $font-secondary;
+          color: $color-secondary;
+          text-decoration: none;
+          margin-bottom: 20px;
+          display: inline-block;
+          vertical-align: top;
+
+          &:hover{
+            color: $color-primary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .nav-links{
+    @extend .max-width-container;
+    @include section-padding-small;
+    text-align: right;
+
+    > *{
+      text-transform: uppercase;
+      margin-left: 10px;
+    }
+
+    .nav-links-title{
+      font-family: $font-secondary;
+      color: $color-secondary;
+    }
+
+    a{
+      color: #bbb;
+      text-decoration: none;
+
+      &:hover{
+        color: #393a3e;
+        text-decoration: underline;
+      }
+    }
+  }
+  .widget-area{
+    padding: 8% 5%;
+
+    width: 35%;
+    flex: 0 0 100%;
+
+    @include breakpoint($break-medium) {
+      padding: 70px;
+    }
+
+    @include breakpoint(1000px) {
+      padding: 60px 90px;
+      width: 35%;
+      flex: 0 0 420px;
+    }
+  }
+}

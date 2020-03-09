@@ -1,0 +1,142 @@
+//--------------------------------------------------------------
+// Elements and Base Tags
+//--------------------------------------------------------------
+
+html {
+	@include box-sizing(border-box);
+	font-family: $font-default;
+	// Root for rems
+		// 62.5% takes 16px (browser default size for medium text) down to 10px
+		// ref: http://clagnut.com/blog/348/
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+.over-effect{
+	border: 3px solid #222;
+	border-radius: 4px;
+	color: #222;
+	display: inline-block;
+	padding: .8rem 3.5rem;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.4s;
+	font-family: $font-secondary;
+	span.over-effect-label{
+		position: relative;
+		left: 0;
+		transition: left 0.4s;
+		color: inherit;
+	}
+	span.icon{
+		right: 3rem;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		position: absolute;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		width: 170%;
+		height: 300%;
+		background-color: $color-btn-hover;
+		transform: rotate(-30deg);
+		top: -380%;
+		left: -90%;
+		transition: .7s;
+		z-index: -1;
+	}
+	&:hover{
+		color: #fff !important;
+		border-color: $color-btn-hover !important;
+		background-color: $color-btn-hover !important;
+		span.over-effect-label{
+			left: -1.6rem;
+		}
+		span.icon{
+			right: 1.6rem;
+			opacity: 1;
+			color: #fff !important;
+		}
+		&:before{
+			height: 360%;
+			top: -150%;
+			left: -5%;
+		}
+	}
+}

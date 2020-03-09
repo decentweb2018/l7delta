@@ -1,0 +1,43 @@
+section.text_block{
+  @include section-padding;
+  background-size: cover;
+  background-position: center;
+
+  @include breakpoint($break-large) {
+    font-size: 2rem;
+  }
+
+  @include breakpoint($break-large-plus) {
+    font-size: 2.4rem;
+  }
+
+  .max-width-container{
+    position: relative;
+    z-index:2;
+  }
+
+  .over-effect{
+    font-size: .5em;
+  }
+
+  .cta{
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-width: 4px;
+    color: $color-secondary;
+    border-color: $color-secondary;
+    font-weight: 700;
+    padding: 1.2rem 3.2rem;
+
+    @include breakpoint( $break-medium, max ) {
+      float: left;
+      clear: both;
+      font-size: .9em;
+    }
+
+    @include breakpoint( $break-small, max ) {
+      width: 100%;
+      padding: 2rem 3rem;
+    }
+  }
+}

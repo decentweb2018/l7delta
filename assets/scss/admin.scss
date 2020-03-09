@@ -1,0 +1,100 @@
+// Variables
+@import "variables";
+
+
+.acf-field-flexible-content[data-name='content']{
+  > .acf-input {
+    > .acf-flexible-content > .values > .layout {
+      border-left: 10px solid #333;
+
+      &:nth-child(even) {
+        border-left: 10px solid #ccc;
+      }
+
+      .acf-field[data-name="component"]{
+        > .acf-label{
+          display: none;
+        }
+      }
+
+      >.acf-fields > .acf-field[data-name='component']{
+        > .acf-input{
+          > .acf-repeater{
+            > .acf-table{
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Hero Heading Section
+.layout[data-layout='hero_block']{
+  .acf-field[data-name='heading'],
+  .acf-field[data-name='heading_rotator']{
+    input{
+      font-family: $font-secondary;
+      font-weight: bold;
+      height: 52px;
+      font-size: 40px;
+      color: #222;
+    }
+  }
+  .acf-field[data-name='heading_rotator']{
+    input{
+      color: $color-primary;
+    }
+    thead{
+      display: none;
+    }
+  }
+  .acf-field[data-name='content']{
+
+  }
+}
+
+// Minimize Background
+.acf-field[data-type='component_field'][data-name='background'],
+.acf-field[data-type='component_field'][data-name='animate_options']{
+  > .acf-input{
+    display: none;
+  }
+
+  > .acf-label {
+    margin-bottom: 0;
+    transition: margin .4s;
+    label {
+      &:after {
+        float: right;
+        color: #bbb;
+        content: '\e80f';
+        font-family: "acf";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 23px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: 50%;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &.expanded{
+    > .acf-label {
+      margin-bottom: 10px;
+      label {
+        &:after {
+          line-height: 20px;
+          content: '\e810';
+        }
+      }
+    }
+  }
+}

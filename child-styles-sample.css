@@ -1,0 +1,83 @@
+/*
+ * span color
+ */
+section.hero_block h1 span{
+    /*color: #ff0000; */
+}
+
+
+/*
+ * text color in slider box
+ */
+section.hero_block .content,
+section.hero_block h1{
+    /*color: #ff0000; */
+}
+
+
+/*
+ * button default color
+ */
+.over-effect, .primary-menu-container > ul > li > a, .primary-menu-container > li > a, .gform_wrapper input[type=submit].gform_button{
+    /*background-color: #ff0000; */
+    /*color: #ff0000; */
+}
+
+/*
+ * over color for links
+ */
+.over-effect:hover, .primary-menu-container > ul > li > a:hover, .primary-menu-container > li > a:hover, .gform_wrapper input[type=submit].gform_button:hover{
+    /*background-color: #ff0000; */
+    /*color: #ff0000; */
+}
+
+/*
+ * footer bkgd color / footer text color
+ */
+.site-footer .footer-menu{
+    /*background-color: #000; */
+    /*color: #fff; */
+}
+
+/*
+ * slide out menu default color
+ */
+.slide-out-container .menu-slide-out-nav-container ul li a,
+.slide-out-container .slide-out h3,
+.slide-out-container .slide-out .menu-contact-info p a,
+.slide-out-container .menu-social-menu-container ul li a{
+    /*color: #222; */
+}
+
+
+/*
+ * menu item over color
+ */
+.slide-out-container .menu-slide-out-nav-container ul li a:hover,
+.slide-out-container .slide-out .menu-contact-info p a:hover,
+.slide-out-container .menu-social-menu-container ul li a:hover{
+    /*color: #00ee00; */
+}
+
+
+/*
+ * h1-h6
+ */
+section.content_builder_block h1{
+
+}
+section.content_builder_block h2{
+
+}
+section.content_builder_block h3{
+
+}
+section.content_builder_block h4{
+
+}
+section.content_builder_block h5{
+
+}
+section.content_builder_block h6{
+
+}

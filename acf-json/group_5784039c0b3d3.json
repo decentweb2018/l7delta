@@ -1,0 +1,100 @@
+{
+    "key": "group_5784039c0b3d3",
+    "title": "Form Block",
+    "fields": [
+        {
+            "key": "field_5784f5d502210",
+            "label": "Animate Options",
+            "name": "animate_options",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "field_group_id": "group_5775227ccbb65",
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "sub_fields": [],
+            "field_group_key": null,
+            "repeatable": false,
+            "appearances": []
+        },
+        {
+            "key": "field_578403aaf7e99",
+            "label": "Background",
+            "name": "background",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "field_group_id": "group_5772d16d408df",
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "Add Row",
+            "collapsed": "",
+            "sub_fields": [],
+            "field_group_key": null,
+            "repeatable": false,
+            "appearances": []
+        },
+        {
+            "key": "field_5784052cfd1e8",
+            "label": "Copy",
+            "name": "copy",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_578403e4f7e9a",
+            "label": "Form",
+            "name": "form",
+            "type": "gravity_forms_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 0,
+            "allow_multiple": 0
+        }
+    ],
+    "location": [],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "is_acf_component": true,
+    "modified": 1541750502
+}
