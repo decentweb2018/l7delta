@@ -1,12 +1,13 @@
-/*
-Theme Name: L7 Delta
-Text Domain: _l7_theme
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-
-Theme styles found in assets/scss/
-*/
+/**
+ * Theme Name:       L7 Delta
+ * Text Domain:      _l7_theme
+ * Theme URI:        https://l7deltastage.wpengine.com/
+ * Version:          2.0.0
+ * Description:      Description
+ * Author:           L7
+ * Template Version: 1.0.0
+ * GitHub Theme URI: https://github.com/decentweb2018/l7delta
+ */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i&display=swap');
